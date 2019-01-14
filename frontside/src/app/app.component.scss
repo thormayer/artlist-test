@@ -1,0 +1,26 @@
+.container{
+
+    display: flex;
+    flex-direction: column;
+
+    .main-menu{
+        width: 100%;
+        // height: 2rem;
+        display: flex;
+        flex-direction: row;
+        // background-color: cornflowerblue;
+
+        .menu-item{
+            padding: 0.5rem;
+            
+        }
+    }
+
+    mat-toolbar{
+        margin-bottom: 1rem;
+    }
+
+    .content{
+        padding: 2rem;
+    }
+}

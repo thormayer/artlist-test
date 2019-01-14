@@ -1,0 +1,12 @@
+
+<h1>{{boxesArray}}</h1>
+<div class="container">
+  <div class="box-row" *ngFor="let col of drawObj; let i = index;">
+     <div class="col" *ngFor="let box of col">
+      <ng-container *ngIf="box !== 1">
+        <div class="box" [ngStyle]="{'background-color' : box === 0 ? 'brown': 'white'}">    </div> 
+      </ng-container>
+      <div class="box water"  *ngIf="box === 1"></div>
+    </div> 
+  </div>
+</div>

@@ -1,0 +1,30 @@
+<div class="container">
+
+  <!-- TOP -->
+  <div class="top-filter">
+    <div class="filter-box">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Filter" (keyup)="filterPressed($event)">
+      </mat-form-field>
+    </div>
+    
+  </div>
+  <div class="line2">
+      <button mat-raised-button color="accent" (click)="add()">ADD</button>
+      <button mat-raised-button color="accent">REMOVE</button>
+  </div>
+  <!-- //TOP -->
+
+  <div class="main">
+    <div class="left">
+      <!-- TABLE -->
+      <gilad-table [data]="list" *ngIf="list" (rowClicked)="rowClicked($event)">
+      </gilad-table>
+      <!-- //TABLE -->
+    </div>
+    <div class="right">
+      <detail-view [selected]="rowSelected" *ngIf="rowSelected">
+      </detail-view>
+    </div>
+  </div>
+</div>

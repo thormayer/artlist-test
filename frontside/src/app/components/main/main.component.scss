@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    flex-direction: column;
+
+    .top-filter{
+        display: flex;
+        flex-direction: row;
+
+        // padding: 0.5rem;
+
+        .filter-box{
+            margin-right: 1rem;
+        }
+        
+
+
+    }
+
+    .line2{
+        margin-bottom: 1rem;
+
+        button{
+            margin-right: 0.5rem;
+        }
+    }
+    .main{
+
+        display: flex;
+        flex-direction: row;
+
+
+        .left{
+            flex: 1;
+        }
+
+        .right{
+
+        }
+    }
+}
